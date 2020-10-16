@@ -1,0 +1,108 @@
+   .navBar{
+    
+      
+      font-family:Arial;
+      background-color:#0B18AE;
+      position:fixed;
+      top:0;
+      padding-top:6%;
+      
+      
+      
+      width:101%;
+      left:-1%;
+      border-left-style:solid;
+      
+       
+      
+    }
+ .Open{
+     background-color:rgba(255,255,255,1);
+     border-color:rgba(0,0,0,0);
+     position:fixed;
+     top:0%;
+     left:0%;
+    transition:0.5s;
+    font-size:100%;
+ }
+ul {
+   
+list-style-type:none;
+    padding:0;
+    overflow:hidden;
+    position:fixed;
+    top: 0%;
+        height: 100%;
+   
+    background-color:rgb(51, 113, 166);
+    left:0%;
+    width:0;
+   transition:0.5s;
+}
+
+li {
+
+ width:100%
+    display:block;
+   border:10px;
+  
+}
+li a {
+    
+border:10px;
+   border-color:black;
+    color:rgba(209, 240, 255,1);
+    text-align: center;
+    padding:0% 25px 100% 0%;
+    text-decoration: none;
+  position:absolute;
+   align-items: center;
+    justify-content: center;
+    
+
+}
+   
+li a:hover:not(.active) {
+ background-color:rgb(1, 67, 125);   
+}
+
+.active{
+background-color:rgb(1, 67, 125);
+}
+/* 
+responsive
+*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* 
+responsive
+*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+ .Open{
+     background-color:rgba(255,255,255,1);
+     border-color:rgba(0,0,0,0);
+     position:fixed;
+    width:100px;
+    height:100px;
+     top:0%;
+     left:0%;
+    transition:0.5s;
+    font-size:100%;
+ }
+}
