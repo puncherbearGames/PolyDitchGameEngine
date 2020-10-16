@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+  <title>
+  Puncherbeargames Not Home  
+  </title>
+ <link rel="stylesheet" href="indexCSS.css">
+  </head>
+
+
+    <div class = "navBar">
+<button onclick="openMenu()" class="Open" id="MenuAn"><i class="fa fa-bars"></i></button>
+  <ul id="LinksForMenu">
+  <li><a  href="https://puncherbeargames.github.io/">Home</a></li>
+  <li><a class="active" href="https://puncherbeargames.github.io/NotHome.html">Not Home</a></li>
+  </ul>
+  </div>
+  
+<body>
+
+</body> 
+<script>
+    
+    function openMenu(){
+        document.getElementById("LinksForMenu").style.width="19.21%";
+          document.getElementById("MenuAn").innerHTML="<i class='fa fa-close'></i>";
+           document.getElementById("MenuAn").style.left="19.21%";
+        document.getElementById("MenuAn").onclick=CloseMenu;
+    }
+     function CloseMenu(){
+        document.getElementById("LinksForMenu").style.width="0%";
+        document.getElementById("MenuAn").innerHTML="<i class='fa fa-bars'></i>";
+ document.getElementById("MenuAn").style.left="0%";
+        document.getElementById("MenuAn").onclick=openMenu;
+    }
+    
+</script>
